@@ -1,0 +1,78 @@
+/* Container */
+.chat-input-container {
+  position: relative;
+  padding: 10px;
+  background: #202c33;
+}
+
+/* Input box */
+.chat-input-box {
+  display: flex;
+  align-items: center;
+  background: #2a3942;
+  border-radius: 25px;
+  padding: 6px 10px;
+}
+
+/* Input field */
+.chat-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Placeholder */
+.chat-input::placeholder {
+  color: #8696a0;
+}
+
+/* Icon button */
+.icon-btn {
+  background: none;
+  border: none;
+  color: #8696a0;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* Send button */
+.send-btn {
+  background: #8696a0;
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  color: white;
+  cursor: not-allowed;
+  transition: all 0.2s ease;
+}
+
+/* Active send */
+.send-btn.active {
+  background: #00a884;
+  cursor: pointer;
+}
+
+.send-btn.active:hover {
+  transform: scale(1.1);
+}
+
+/* Emoji picker */
+.emoji-picker {
+  position: absolute;
+  bottom: 60px;
+  left: 10px;
+  z-index: 100;
+}
+
+/* Mobile fix */
+@media (max-width: 600px) {
+  .emoji-picker {
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+}

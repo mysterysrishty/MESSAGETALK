@@ -1,0 +1,80 @@
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px;
+}
+
+.message-row {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.message-row.sent {
+  justify-content: flex-end;
+}
+
+.message-row.received {
+  justify-content: flex-start;
+}
+
+.avatar.small {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+/* 💬 BUBBLES */
+.message-bubble {
+  max-width: 70%;
+  padding: 8px 10px;
+  border-radius: 10px;
+  position: relative;
+  font-size: 14px;
+}
+
+.sent-bubble {
+  background: #005c4b;
+  color: white;
+  border-bottom-right-radius: 2px;
+}
+
+.received-bubble {
+  background: #202c33;
+  color: white;
+  border-bottom-left-radius: 2px;
+}
+
+/* 👤 Name */
+.sender-name {
+  font-size: 11px;
+  color: #00a884;
+  margin-bottom: 2px;
+  display: block;
+}
+
+/* 📝 Text */
+.message-text {
+  word-break: break-word;
+}
+
+/* ⏰ Time + ticks */
+.message-meta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  margin-top: 4px;
+  font-size: 11px;
+  color: #8696a0;
+}
+
+/* ✔ ticks */
+.tick.gray {
+  color: #8696a0;
+}
+
+.tick.blue {
+  color: #53bdeb;
+}
